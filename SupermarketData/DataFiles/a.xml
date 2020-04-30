@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<supermarket>
+	<furnizori>
+		<furnizor id="1" nume="Brutaria Petru">
+			<produse_oferta>
+				<produs_oferta sku ="1">
+					<nume>"paine mare"</nume>
+					<pret>3</pret>
+					<categorie>"alimente"</categorie>
+					<bucati_comanda_minima>200</bucati_comanda_minima>
+				</produs_oferta>
+				<produs_oferta sku ="2">
+					<nume>"paine mica"</nume>
+					<pret>2</pret>
+					<categorie>"alimente"</categorie>
+					<bucati_comanda_minima>300</bucati_comanda_minima>
+				</produs_oferta>
+			</produse_oferta>
+		</furnizor>
+		<furnizor id="2" nume="Brutaria Matei">
+			<produse_oferta>
+				<produs_oferta sku ="1">
+					<nume>"paine mare"</nume>
+					<pret>4</pret>
+					<categorie>"alimente"</categorie>
+					<bucati_comanda_minima>50</bucati_comanda_minima>
+				</produs_oferta>
+				<produs_oferta sku ="2">
+					<nume>"paine mica"</nume>
+					<pret>1.5</pret>
+					<categorie>"alimente"</categorie>
+					<bucati_comanda_minima>300</bucati_comanda_minima>
+				</produs_oferta>
+				<produs_oferta sku ="3">
+					<nume>"chifla"</nume>
+					<pret>1</pret>
+					<categorie>"alimente"</categorie>
+					<bucati_comanda_minima>400</bucati_comanda_minima>
+				</produs_oferta>
+			</produse_oferta>
+		</furnizor>
+		<furnizor id="3" nume="Brutaria Luca">
+			<produse_oferta>
+				<produs_oferta sku ="1">
+					<nume>"paine medie"</nume>
+					<pret>3</pret>
+					<categorie>"alimente"</categorie>
+					<bucati_comanda_minima>150</bucati_comanda_minima>
+				</produs_oferta>
+				<produs_oferta sku ="3">
+					<nume>"chifla"</nume>
+					<pret>1</pret>
+					<categorie>"alimente"</categorie>
+					<bucati_comanda_minima>400</bucati_comanda_minima>
+				</produs_oferta>
+				<produs_oferta sku ="4">
+					<nume>"chifla integrala"</nume>
+					<pret>2</pret>
+					<categorie>"alimente"</categorie>
+					<bucati_comanda_minima>230</bucati_comanda_minima>
+				</produs_oferta>
+			</produse_oferta>
+		</furnizor>
+	</furnizori>
+	<produse>
+		<produs sku ="1">
+			<nume>"paine mica"</nume>
+			<pret>7</pret>
+			<categorie>"alimente"</categorie>
+			<descriere>"paine de dimensiune mica"</descriere>
+			<stoc>1500</stoc>
+			<stoc_minim>1300</stoc_minim>
+			<stoc_maxim>3000</stoc_maxim>
+		</produs>
+		<produs sku ="2">
+			<nume>"paine medie"</nume>
+			<pret>9</pret>
+			<categorie>"alimente"</categorie>
+			<descriere>"paine de dimensiune medie"</descriere>
+			<stoc>1500</stoc>
+			<stoc_minim>2800</stoc_minim>
+			<stoc_maxim>4000</stoc_maxim>
+		</produs>
+		<produs sku ="3">
+			<nume>"paine mare"</nume>
+			<pret>14</pret>
+			<categorie>"alimente"</categorie>
+			<descriere>"paine de dimensiune mare"</descriere>
+			<stoc>1500</stoc>
+			<stoc_minim>1000</stoc_minim>
+			<stoc_maxim>2000</stoc_maxim>
+		</produs>
+		<produs sku ="4">
+			<nume>"chifla "</nume>
+			<pret>4</pret>
+			<categorie>"alimente"</categorie>
+			<descriere>"chifla simpla"</descriere>
+			<stoc>1500</stoc>
+			<stoc_minim>2300</stoc_minim>
+			<stoc_maxim>4000</stoc_maxim>
+		</produs>
+		<produs sku ="5">
+			<nume>"chifla integrala"</nume>
+			<pret>6</pret>
+			<categorie>"alimente"</categorie>
+			<descriere>"chifla din grau integral"</descriere>
+			<stoc>1500</stoc>
+			<stoc_minim>2300</stoc_minim>
+			<stoc_maxim>4000</stoc_maxim>
+		</produs>
+	</produse>
+</supermarket>
