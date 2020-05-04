@@ -1,12 +1,9 @@
-﻿using System;
+﻿using Nancy.Json;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Xsl;
@@ -54,8 +51,40 @@ namespace SupermarketData
 		private void ProcessJSONFile(string fileName)
 		{
 			string inputJSON = File.ReadAllText(fileName);
+			string parsedJSON = ConvertJSONToOutput(inputJSON);
+			webBrowser1.DocumentText = parsedJSON;
+		}
 
-			webBrowser1.DocumentText = inputJSON;
+		private string ConvertJSONToOutput(string inputJSON)
+		{
+			Supermarket supermarket = Newtonsoft.Json.JsonConvert.DeserializeObject<Supermarket>(inputJSON);
+			var i1 = "   ";
+			var i2 = "   _   ";
+			var s = " , ";
+			var br = "<br>";
+
+			var parsedJSON = new StringBuilder();
+			parsedJSON.Append("<h3>SUPERMARKET</h3><br><br>");
+			parsedJSON.Append("<h4>Furnizori</h4><br><br>");
+			foreach(var furnizor in supermarket.Furnizori)
+			{
+				parsedJSON.Append(i1 + furnizor.Nume + s + "  Id:" + furnizor.Id + br + i1 + "Oferte de produse:" + br);
+				foreach(var po in furnizor.ProduseOferta)
+				{
+					parsedJSON.Append(i2 + "Nume: " + po.Nume + br + i2 + "Sku: " + po.Sku + br + i2 + "Pret: " + po.Pret + br + i2 + "BucatiComandaMinima: " + po.BucatiComandaMinima + br + br);
+				}
+
+				parsedJSON.Append(br);
+			}
+
+			parsedJSON.Append("<h4>Produse</h4><br><br>");
+			foreach (var p in supermarket.Produse)
+			{
+				parsedJSON.Append(i1 + "Nume: " + p.Nume + br + i1 + "Sku: " + p.Sku + br + i1 + "Pret: " + p.Pret + br + i1 + "Descriere: " + p.Descriere + br + i1 + "Stoc: " + p.Stoc + br + i1 + "Stoc Minim: " + p.StocMinim + br + i1 + "Stoc Maxim: " + p.StocMaxim + br + br);
+
+			}
+
+			return parsedJSON.ToString();
 		}
 
 		private string GetFileExtension(string fileName)

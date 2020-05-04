@@ -1,0 +1,117 @@
+{
+   "furnizori": [
+      {
+         "id": "1",
+         "nume": "Brutaria Petru",
+         "produse": [
+            {
+               "sku": "1",
+               "nume": "paine mare",
+               "pret": "3",
+               "bucatiComandaMinima": "200"
+            },
+            {
+               "sku": "2",
+               "nume": "paine mica",
+               "pret": "2",
+               "bucatiComandaMinima": "300"
+            }
+         ]
+      },
+      {
+         "id": "2",
+         "nume": "Brutaria Matei",
+         "produse": [
+            {
+               "sku": "1",
+               "nume": "paine mare",
+               "pret": "4",
+               "bucatiComandaMinima": "50"
+            },
+            {
+               "sku": "2",
+               "nume": "paine mica",
+               "pret": "1.5",
+               "bucatiComandaMinima": "300"
+            },
+            {
+               "sku": "3",
+               "nume": "chifla",
+               "pret": "1",
+               "bucatiComandaMinima": "400"
+            }
+         ]
+      },
+      {
+         "id": "3",
+         "nume": "Brutaria Luca",
+         "produse": [
+            {
+               "sku": "1",
+               "nume": "paine medie",
+               "pret": "3",
+               "bucatiComandaMinima": "150"
+            },
+            {
+               "sku": "3",
+               "nume": "chifla",
+               "pret": "1",
+               "bucatiComandaMinima": "400"
+            },
+            {
+               "sku": "4",
+               "nume": "chifla integrala",
+               "pret": "2",
+               "bucatiComandaMinima": "230"
+            }
+         ]
+      }
+   ],
+   "produse": [
+      {
+         "sku": "1",
+         "nume": "paine mica",
+         "pret": "7",
+         "descriere": "paine de dimensiune mica",
+         "stoc": "1500",
+         "stocMinim": "1300",
+         "stocmaxim": "3000"
+      },
+      {
+         "sku": "2",
+         "nume": "paine medie",
+         "pret": "9",
+         "descriere": "paine de dimensiune medie",
+         "stoc": "1500",
+         "stocMinim": "2800",
+         "stocmaxim": "4000"
+      },
+      {
+         "sku": "3",
+         "nume": "paine mare",
+         "pret": "14",
+         "descriere": "paine de dimensiune mare",
+         "stoc": "1500",
+         "stocMinim": "1000",
+         "stocmaxim": "2000"
+      },
+      {
+         "sku": "4",
+         "nume": "chifla ",
+         "pret": "4",
+         "descriere": "chifla simpla",
+         "stoc": "1500",
+         "stocMinim": "2300",
+         "stocmaxim": "4000"
+      },
+      {
+         "sku": "5",
+         "nume": "chifla integrala",
+         "pret": "6",
+         "descriere": "chifla din grau integral",
+         "stoc": "1500",
+         "stocMinim": "2300",
+         "stocmaxim": "4000"
+      }
+   ]
+}
